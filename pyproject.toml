@@ -1,0 +1,23 @@
+[project]
+name = "document-copilot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Nikhil070-kaj", email = "[EMAIL_ADDRESS]" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain", "langchain-community", "langchain-core",
+    "langchain-openai", "langchain-text-splitters", "langchain-chroma",
+    "python-dotenv", "langchain-huggingface", "langchain-groq", "llama-parse",
+    "sentence-transformers", "rank_bm25",
+    "fastapi", "uvicorn[standard]", "python-multipart"
+]
+
+[project.scripts]
+document-copilot = "document_copilot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
