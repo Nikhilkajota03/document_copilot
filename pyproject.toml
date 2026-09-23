@@ -12,7 +12,7 @@ dependencies = [
     "langchain-openai", "langchain-text-splitters", "langchain-chroma",
     "python-dotenv", "langchain-huggingface", "langchain-groq", "llama-parse",
     "sentence-transformers", "rank_bm25",
-    "fastapi", "uvicorn[standard]", "python-multipart"
+    "fastapi", "uvicorn[standard]", "python-multipart", "ragas", "datasets", "langchain-google-vertexai"
 ]
 
 [project.scripts]
